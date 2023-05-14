@@ -1,3 +1,4 @@
+const { Console } = require("console");
 const fs = require("fs");
 const folderName =
   process.argv[2] || "Project"; /*File Default Name Is Project*/
@@ -12,4 +13,5 @@ try {
   console.log("Successfully created file and folder");
 } catch (error) {
   console.log("Failed to create files");
+  console.log(error);
 }
